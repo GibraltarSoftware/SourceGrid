@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DF8B880-8A23-4F10-9EAB-D72EF0672C3E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DevAge.Windows.Forms</AssemblyName>
+    <AssemblyOriginatorKeyFile>DevAgeSourcePack.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DevAge</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\DevAge.Windows.Forms.XML</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DevAge.Windows.Forms</AssemblyName>
+    <RootNamespace>DevAge</RootNamespace>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\DevAge.Windows.Forms.xml</DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <OutputType>Library</OutputType>
+    <AssemblyName>DevAge.Windows.Forms</AssemblyName>
+    <RootNamespace>DevAge</RootNamespace>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComponentModel\BoundList.cs" />
+    <Compile Include="ComponentModel\IBoundList.cs" />
+    <Compile Include="DevAgeAssemblyInfo.cs" />
+    <Compile Include="Drawing\AnchorArea.cs" />
+    <Compile Include="Drawing\BorderLine.cs" />
+    <Compile Include="Drawing\BrushsCache.cs" />
+    <Compile Include="Drawing\GraphicsCache.cs" />
+    <Compile Include="Drawing\MeasureHelper.cs" />
+    <Compile Include="Drawing\Padding.cs" />
+    <Compile Include="Drawing\PensCache.cs" />
+    <Compile Include="Drawing\RectangleBorder.cs" />
+    <Compile Include="Drawing\RoundedRectangle.cs" />
+    <Compile Include="Drawing\Utilities.cs" />
+    <Compile Include="Drawing\VisualElements\BackgroundBase.cs" />
+    <Compile Include="Drawing\VisualElements\BackgroundBorder.cs" />
+    <Compile Include="Drawing\VisualElements\BackgroundBorderBase.cs" />
+    <Compile Include="Drawing\VisualElements\BackgroundLinearGradient.cs" />
+    <Compile Include="Drawing\VisualElements\BackgroundSolid.cs" />
+    <Compile Include="Drawing\VisualElements\Button.cs" />
+    <Compile Include="Drawing\VisualElements\ButtonBase.cs" />
+    <Compile Include="Drawing\VisualElements\ButtonThemed.cs" />
+    <Compile Include="Drawing\VisualElements\ColumnHeader.cs" />
+    <Compile Include="Drawing\VisualElements\ColumnHeaderBase.cs" />
+    <Compile Include="Drawing\VisualElements\ColumnHeaderThemed.cs" />
+    <Compile Include="Drawing\Enums.cs" />
+    <Compile Include="Drawing\VisualElements\CheckBoxBase.cs" />
+    <Compile Include="Drawing\VisualElements\CheckBox.cs" />
+    <Compile Include="Drawing\VisualElements\CheckBoxThemed.cs" />
+    <Compile Include="Drawing\VisualElements\Container.cs" />
+    <Compile Include="Drawing\VisualElements\ContainerBase.cs" />
+    <Compile Include="Drawing\VisualElements\DropDownButtonThemed.cs" />
+    <Compile Include="Drawing\VisualElements\DropDownButton.cs" />
+    <Compile Include="Drawing\VisualElements\DropDownButtonBase.cs" />
+    <Compile Include="Drawing\EditablePanel.cs" />
+    <Compile Include="Drawing\EditablePanelThemed.cs" />
+    <Compile Include="Drawing\EditablePanelBase.cs" />
+    <Compile Include="Drawing\VisualElements\HeaderThemed.cs" />
+    <Compile Include="Drawing\VisualElements\Header.cs" />
+    <Compile Include="Drawing\VisualElements\HeaderBase.cs" />
+    <Compile Include="Drawing\IBorder.cs" />
+    <Compile Include="Drawing\VisualElements\Icon.cs" />
+    <Compile Include="Drawing\VisualElements\Image.cs" />
+    <Compile Include="Drawing\VisualElements\RowHeader.cs" />
+    <Compile Include="Drawing\VisualElements\RowHeaderThemed.cs" />
+    <Compile Include="Drawing\VisualElements\RowHeaderBase.cs" />
+    <Compile Include="Drawing\VisualElements\SortIndicator.cs" />
+    <Compile Include="Drawing\VisualElements\SortIndicatorThemed.cs" />
+    <Compile Include="Drawing\VisualElements\Text.cs" />
+    <Compile Include="Drawing\VisualElements\TextGDI.cs" />
+    <Compile Include="Drawing\VisualElements\TextRenderer.cs" />
+    <Compile Include="Drawing\VisualElements\VisualElementBase.cs" />
+    <Compile Include="Drawing\VisualElements\VisualElementList.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentModel\BoundDataView.cs" />
+    <Compile Include="ComponentModel\BoundListBase.cs" />
+    <Compile Include="Windows\Forms\ButtonMultiSelection.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ColorPicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DevAgeMaskedTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DevAgeComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\CommonImages.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ControlCursor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DropDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DropDownButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\EditableControlBase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ErrorDialogDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\FormSingleton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\HeaderGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\ImageNavigator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Line.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\LinkLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DevAgeNumericUpDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\PositionRecorder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\SendCharExact.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DevAgeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\DevAgeTextBoxButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\TextBoxUITypeEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Windows\Forms\Utilities.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Res\left.cur" />
+    <None Include="Res\right.cur" />
+    <None Include="Res\SortDown.ico" />
+    <None Include="Res\SortUp.ico" />
+    <EmbeddedResource Include="Windows\Forms\ButtonMultiSelection.resx">
+      <DependentUpon>ButtonMultiSelection.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ColorPicker.resx">
+      <DependentUpon>ColorPicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\DropDown.resx">
+      <DependentUpon>DropDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\DropDownButton.resx">
+      <DependentUpon>DropDownButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\EditableControlBase.resx">
+      <DependentUpon>EditableControlBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ErrorDialogDetails.resx">
+      <DependentUpon>ErrorDialogDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\ImageNavigator.resx">
+      <DependentUpon>ImageNavigator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\Line.resx">
+      <DependentUpon>Line.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\LinkLabel.resx">
+      <DependentUpon>LinkLabel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\DevAgeNumericUpDown.resx">
+      <DependentUpon>DevAgeNumericUpDown.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\DevAgeTextBoxButton.resx">
+      <DependentUpon>DevAgeTextBoxButton.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Forms\TextBoxUITypeEditor.resx">
+      <DependentUpon>TextBoxUITypeEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DevAgeSourcePack.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Drawing\VisualElements\VisualElements.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\DropDown.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevAge.Core\DevAge.Core.csproj">
+      <Project>{3EB346D6-5AE2-42BE-98F9-BFAC1C2C719C}</Project>
+      <Name>DevAge.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <ProjectGuid>{3DF8B880-8A23-4F10-9EAB-D72EF0672C3E}</ProjectGuid>
+    <RootNamespace>DevAge</RootNamespace>
+  </PropertyGroup>
+</Project>
